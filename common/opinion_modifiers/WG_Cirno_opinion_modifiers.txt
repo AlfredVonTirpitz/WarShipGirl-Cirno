@@ -1,1 +1,0 @@
-WG_Cirno_boss = { opinion = -999 }
