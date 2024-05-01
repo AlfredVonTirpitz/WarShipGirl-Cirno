@@ -1,0 +1,217 @@
+country_decisions = {
+	decisions_Cirno_SupperZAT1 = {
+		major = yes
+		potential = {
+			tag = AZT
+			has_global_flag = Cirno_Supper_AZT
+			NOT = { has_country_flag = Cirno_SupperZAT1 }
+		}
+		allow = {
+			NOT = { vassal = 5 }
+		}
+		effect = {
+			add_doom = -100
+			add_stability = 1
+			vassalize = MAT
+			vassalize = TON
+			vassalize = TAR
+			vassalize = XAL
+			vassalize = CLM
+			hidden_effect = { set_country_flag = Cirno_SupperZAT1 }
+		}
+		ai_will_do = { factor = 999 }
+	}
+	decisions_Cirno_SupperZAT2 = {
+		major = yes
+		potential = {
+			tag = AZT
+			has_country_flag = Cirno_SupperZAT1
+			NOT = { has_country_flag = Cirno_SupperZAT2 }
+		}
+		allow = {
+			NOT = { vassal = 5 }
+		}
+		effect = {
+			add_doom = -100
+			add_stability = 1
+			inherit = MAT
+			inherit = TON
+			inherit = TAR
+			inherit = XAL
+			inherit = CLM
+			vassalize = TLX
+			vassalize = TEO
+			vassalize = TOT
+			vassalize = OTO
+			vassalize = HST
+			hidden_effect = { set_country_flag = Cirno_SupperZAT2 }
+		}
+		ai_will_do = { factor = 999 }
+	}
+	decisions_Cirno_SupperZAT3 = {
+		major = yes
+		potential = {
+			tag = AZT
+			has_country_flag = Cirno_SupperZAT2
+			NOT = { has_country_flag = Cirno_SupperZAT3 }
+		}
+		allow = {
+			NOT = { vassal = 5 }
+		}
+		effect = {
+			add_doom = -100
+			add_stability = 1
+			inherit = TLX
+			inherit = TEO
+			inherit = TOT
+			inherit = OTO
+			inherit = HST
+			vassalize = ZAP
+			vassalize = MIX
+			vassalize = TLA
+			vassalize = COI
+			vassalize = GAM
+			hidden_effect = { set_country_flag = Cirno_SupperZAT3 }
+		}
+		ai_will_do = { factor = 999 }
+	}
+	decisions_Cirno_SupperZAT4 = {
+		major = yes
+		potential = {
+			tag = AZT
+			has_country_flag = Cirno_SupperZAT3
+			NOT = { has_country_flag = Cirno_SupperZAT4 }
+		}
+		allow = {
+			NOT = { vassal = 5 }
+		}
+		effect = {
+			add_doom = -100
+			add_stability = 1
+			inherit = ZAP
+			inherit = MIX
+			inherit = TLA
+			inherit = COI
+			inherit = GAM
+			vassalize = YOK
+			vassalize = LAC
+			vassalize = CNP
+			vassalize = ITZ
+			vassalize = XIU
+			hidden_effect = { set_country_flag = Cirno_SupperZAT4 }
+		}
+		ai_will_do = { factor = 999 }
+	}
+	decisions_Cirno_SupperZAT5 = {
+		major = yes
+		potential = {
+			tag = AZT
+			has_country_flag = Cirno_SupperZAT4
+			NOT = { has_country_flag = Cirno_SupperZAT5 }
+			#NOT = { has_country_flag = AZT_nahuatl_doom_over }
+		}
+		allow = {
+			NOT = { vassal = 5 }
+		}
+		effect = {
+			add_doom = -100
+			add_stability = 1
+			inherit = YOK
+			inherit = LAC
+			inherit = CNP
+			inherit = ITZ
+			inherit = XIU
+			vassalize = COC
+			vassalize = CTM
+			vassalize = KIC
+			vassalize = KAQ
+			vassalize = CHT
+			hidden_effect = { set_country_flag = Cirno_SupperZAT5 }
+		}
+		ai_will_do = { factor = 999 }
+	}
+	decisions_Cirno_SupperZAT6 = {
+		major = yes
+		potential = {
+			tag = AZT
+			has_country_flag = Cirno_SupperZAT5
+			NOT = { has_country_flag = Cirno_SupperZAT6 }
+		}
+		allow = {
+			NOT = { vassal = 5 }
+		}
+		effect = {
+			add_stability = 1
+			inherit = COC
+			inherit = CTM
+			inherit = KIC
+			inherit = KAQ
+			inherit = CHT
+    	add_country_modifier = { name = Cirno_AZTmod_Maya duration = -1 }
+			hidden_effect = { set_country_flag = Cirno_SupperZAT6 }
+		}
+		ai_will_do = { factor = 999 }
+	}
+	decisions_Cirno_SupperZAT7 = { #统一美洲三大部
+		major = yes
+		potential = {
+			tag = AZT
+			has_country_flag = Cirno_SupperZAT6
+			NOT = { has_country_flag = Cirno_SupperZAT7 }
+		}
+		allow = { 
+			tag = AZT
+			#controls = 807 
+		}
+		effect = {
+			add_stability = 1
+			inherit = MCA
+			inherit = QTO
+			inherit = CHM
+			inherit = CJA
+			inherit = HJA
+			inherit = CYA
+			inherit = WKA
+			inherit = ICM
+			inherit = CSU
+			inherit = CLA
+			inherit = CRA
+			inherit = PCJ
+			inherit = CCQ
+			hidden_effect = { set_country_flag = Cirno_SupperZAT7 }
+		}
+		ai_will_do = { factor = 999 }
+	}
+	decisions_Cirno_SupperZAT8 = { #三教合一
+		major = yes
+		potential = {
+			tag = AZT
+			has_country_flag = Cirno_SupperZAT7
+			NOT = { has_country_flag = Cirno_SupperZAT8 }
+		}
+		allow = { is_core = 807 }
+		effect = {
+			add_stability = 1
+			change_unit_type = high_american
+			change_technology_group = high_american
+    	add_country_modifier = { name = Cirno_AZTmod_nahuatl_Maya_inti duration = -1 }
+			hidden_effect = { set_country_flag = Cirno_SupperZAT8 }
+    	add_country_modifier = { name = Cirno_AZTmod_nahuatl_doom_over duration = -1 }
+		}
+		ai_will_do = { factor = 999 }
+	}
+	decisions_Cirno_SupperZAT9 = {
+		major = yes
+		potential = {
+			tag = AZT
+			has_country_flag = Cirno_SupperZAT8
+			NOT = { has_country_flag = Cirno_SupperZAT9 }
+		}
+		allow = { tag = AZT }
+		effect = {
+			230 = { change_culture = aztek change_religion = nahuatl add_core = AZT cede_province = AZT }
+			hidden_effect = { set_country_flag = Cirno_SupperZAT9 }
+		}
+		ai_will_do = { factor = 999 }
+	}
+}
