@@ -1,0 +1,6 @@
+government = republic
+government_rank = 3
+primary_culture = american
+religion = shamanism
+technology_group = western
+capital = 2242
