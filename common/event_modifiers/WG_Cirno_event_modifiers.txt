@@ -58,7 +58,7 @@ Cirno_evtmod_sakuya_Power_of_Love3 = {
 Cirno_evtmod_TD = {
 	heir_chance = 2           #无限火力
 	diplomatic_reputation = 9 #万雌王
-	all_power_cost = -0.1     #现实扭曲者
+	all_power_cost = -0.05    #现实扭曲者
 }
 Cirno_evtmod_IDEAL1 = {
 	ae_impact = -0.25
@@ -78,7 +78,7 @@ Kidney_deficiency_mod = {
 	monarch_lifespan = -0.2 #舍命陪淑女
 }
 #CD
-WarGirl_loan_mod = {}
+WarShipGirl_loan_mod = {}
 #马娘经济
 Cirno_evtmod_uma1 = {
 	global_tax_income = 24
@@ -87,4 +87,142 @@ Cirno_evtmod_uma1 = {
 Cirno_evtmod_hypnotize = {
 	unjustified_demands = -0.5
 	improve_relation_modifier = 1
+}
+
+#智慧女神的祝福
+Cirno_evtmod_Athena = {
+	country_admin_power = 9
+	country_diplomatic_power = 9
+	country_military_power = 9
+}
+
+Cirno_estate_evtmod23 = { #缺船具
+	land_maintenance_modifier = 0.5
+	is_marine_modifier = yes
+}
+Cirno_estate_evtmod24 = { #萨拉可乐
+	global_tax_modifier = 0.05
+}
+Cirno_estate_evtmod25 = { #买粮
+	global_tax_income = -12
+}
+Cirno_estate_evtmod27a = { #缺茶叶-忍耐
+	warshipgirls999_loyalty_modifier = -0.25
+}
+Cirno_estate_evtmod27b = { #缺茶叶-撒币
+	global_tax_income = -60
+}
+Cirno_estate_evtmod27c = { #缺茶叶-打炮
+	heir_chance = -0.25
+	warshipgirls999_loyalty_modifier = 0.25
+}
+Cirno_estate_evtmod30 = { #舰娘服装业
+	global_tax_modifier = 0.05
+	production_efficiency = 0.1
+}
+
+
+harmonized_fascism = { #融合法西斯
+	core_creation = -0.2
+}
+
+
+#天才
+Cirno_rulermod10 = {
+	monarch_admin_power = 1
+	reform_progress_growth = 0.1
+}
+Cirno_rulermod11 = {
+	monarch_admin_power = 2
+	reform_progress_growth = 0.2
+}
+Cirno_rulermod12 = {
+	monarch_admin_power = 3
+	reform_progress_growth = 0.3
+}
+Cirno_rulermod13 = {
+	free_policy = 2
+	monarch_admin_power = 3
+	reform_progress_growth = 0.3
+}
+#魅力
+Cirno_rulermod20 = {
+	diplomatic_reputation = 1
+	monarch_diplomatic_power = 1
+}
+Cirno_rulermod21 = {
+	diplomatic_reputation = 2
+	monarch_diplomatic_power = 2
+}
+Cirno_rulermod22 = {
+	diplomatic_reputation = 3
+	monarch_diplomatic_power = 3
+}
+Cirno_rulermod23 = {
+	ae_impact = -0.2
+	diplomatic_reputation = 3
+	monarch_diplomatic_power = 3
+}
+#强壮
+Cirno_rulermod30 = {
+	imperial_mandate = 0.1
+	imperial_authority_value = 0.1
+	yearly_corruption = -0.05
+	monarch_military_power = 1
+}
+Cirno_rulermod31 = {
+	imperial_mandate = 0.2
+	imperial_authority_value = 0.2
+	yearly_corruption = -0.1
+	monarch_military_power = 2
+}
+Cirno_rulermod32 = {
+	imperial_mandate = 0.3
+	imperial_authority_value = 0.3
+	yearly_corruption = -0.15
+	monarch_military_power = 3
+}
+Cirno_rulermod33 = {
+	imperial_mandate = 0.3
+	imperial_authority_value = 0.3
+	yearly_corruption = -0.2
+	monarch_military_power = 3
+}
+#健康
+Cirno_rulermod40 = {
+	monarch_lifespan = 0.5
+	stability_cost_modifier = -0.1
+}
+Cirno_rulermod41 = {
+	monarch_lifespan = 1
+	stability_cost_modifier = -0.25
+}
+Cirno_rulermod42 = {
+	monarch_lifespan = 2
+	global_unrest = -1
+	stability_cost_modifier = -0.5
+}
+Cirno_rulermod43 = {
+	monarch_lifespan = 4
+	global_unrest = -2
+	stability_cost_modifier = -1
+}
+#多产
+Cirno_rulermod50 = {
+	heir_chance = 0.5
+	reduced_liberty_desire = 5
+}
+Cirno_rulermod51 = {
+	heir_chance = 1
+	reduced_liberty_desire = 10
+}
+Cirno_rulermod52 = {
+	heir_chance = 1.5
+	diplomatic_reputation = 1
+	reduced_liberty_desire = 15
+}
+Cirno_rulermod53 = {
+	heir_chance = 2
+	diplomatic_reputation = 2
+	reduced_liberty_desire = 20
 }

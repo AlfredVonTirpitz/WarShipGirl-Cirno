@@ -7,25 +7,33 @@ estate_warshipgirls999 = {
 		}
 	}
 	country_modifier_happy = {
-		all_power_cost = -0.1
-		sailors_recovery_speed = 0.25
-		sailor_maintenance_modifer = -0.25
+		all_power_cost = -0.05
+		sailors_recovery_speed = 0.2
+		global_ship_trade_power = 10
 	}
 	country_modifier_neutral = {
-		sailors_recovery_speed = 0.2
-		sailor_maintenance_modifer = -0.2
+		sailors_recovery_speed = 0.1
+		global_ship_trade_power = 5
 	}
 	country_modifier_angry = {
-		global_unrest = 5
+		global_sailors_modifier = -1
 		sailors_recovery_speed = -1
+		all_power_cost = 0.2
 	}
 	land_ownership_modifier = {
-		warshipgirls999_loyalty_modifier = 0.2
+		development_cost = -0.5
+		production_efficiency = 0.5
+		global_sailors_modifier = 0.5
+		warshipgirls999_loyalty_modifier = -1
+		
+		global_tax_modifier = 0.2
+		global_autonomy = -0.5
+		max_absolutism = 50
+		liberty_desire_from_subject_development = -1.5
 	}
 	province_independence_weight = {
 		factor = 0
 	}
-	
 	base_influence = 0
 
 	privileges = {
@@ -44,22 +52,6 @@ estate_warshipgirls999 = {
 		
 		estate_warshipgirls_marine                         #舰娘陆战队
 		estate_warshipgirls_uma                            #晃眼！好马闺女
-	}
-	agendas = {
-		estate_warshipgirls_develop_x
-		estate_warshipgirls_build_trade_building_in_y
-		estate_warshipgirls_build_port_building_in_y
-		estate_warshipgirls_build_production_building_in_y
-		estate_warshipgirls_build_university_in_y
-		estate_warshipgirls_build_manufactory_in_y
-		estate_warshipgirls_pay_off_loans
-		estate_warshipgirls_restore_currency
-		estate_warshipgirls_access_sea
-		estate_warshipgirls_build_a_fleet
-		estate_warshipgirls_bigger_fleet_than_rival
-		estate_warshipgirls_reduce_corruption
-		estate_warshipgirls_hire_advisor
-		estate_warshipgirls_fire_advisor
 	}
 	color = { 25 25 100 }
 	

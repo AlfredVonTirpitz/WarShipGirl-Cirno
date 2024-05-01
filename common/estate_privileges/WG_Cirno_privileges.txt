@@ -4,13 +4,9 @@ estate_warshipgirls_6h = {
 	loyalty = 0.1
 	is_valid = { NOT = { has_estate_privilege = estate_warshipgirls_12h } }
 	#与夺命电子厂互斥，如果同时点了俩个一天后就会消失 笑死
-	penalties = { 
-		global_tax_modifier = -0.1
-	}
 	benefits = {
 		idea_cost = -0.1
-		technology_cost = -0.1
-		development_cost = -0.1
+		technology_cost = -0.05
 		years_of_nationalism = -5
 	}
 	cooldown_years = 50 #至少50年
@@ -28,8 +24,8 @@ estate_warshipgirls_12h = {
 	}
 	benefits = {
 		global_tax_modifier = 0.5
-		production_efficiency = 0.25
-		global_trade_goods_size_modifier = 0.25
+		production_efficiency = 0.2
+		global_trade_goods_size_modifier = 0.2
 	}
 	cooldown_years = 50
 	ai_will_do = { factor = 0 }
@@ -38,9 +34,12 @@ estate_warshipgirls_12h = {
 #镇守府
 estate_warshipgirls_port = {
 	icon = GFX_estate_warshipgirls_port
-	influence = 0.1
+	influence = 0.2
 	benefits = { warshipgirls999_privilege_slots = 14 }
-	on_granted = { custom_tooltip = estate_warshipgirls_port_tooltip }
+	on_granted = {
+		custom_tooltip = estate_warshipgirls_port_tooltip
+		hidden_effect = { country_event = { id = Cirno_estate_event.1 } }
+	}
 	on_granted_province = {
 		if = {
 			limit = { has_port = yes NOT = { has_terrain = coastline } NOT = { has_terrain = coastal_desert } }
@@ -80,17 +79,16 @@ estate_warshipgirls_sangti = {
 	loyalty = -0.2
 	influence = 0.1
 	penalties = {
-		global_unrest = 2
-		yearly_corruption = 0.20          #官商勾结
+		global_unrest = 3
+		yearly_corruption = 0.25          #官商勾结
 		years_of_nationalism = 10         #转移矛盾
 		manpower_recovery_speed = -0.2    #羊吃人
 		land_forcelimit_modifier = -0.2   #军队经商
 	}
 	benefits = {
-		light_ship_cost = -0.75
-		trade_efficiency = 0.25
+		light_ship_cost = -0.8
+		trade_efficiency = 0.2
 		global_tax_modifier = 0.5
-		global_ship_trade_power = 9
 		global_trade_goods_size = 0.5
 	}
 	cooldown_years = 50
@@ -110,11 +108,16 @@ estate_warshipgirls_canteen = {
  	  	spices = 1    #香料
  	  	incense = 1   #熏香
  	  	tobacco = 1   #烟草
+ 			livestock = 1 #牲畜
  		}
  	}
 	on_granted = {
 		custom_tooltip = estate_warshipgirls_canteen_tooltip 
-		hidden_effect = { country_event = { id = Cirno_estate_event.2 } }
+		hidden_effect = { 
+			country_event = { id = Cirno_estate_event.2 days = 1 random = 364 } 
+			country_event = { id = Cirno_estate_event.25 days = 365 random = 365 }
+			country_event = { id = Cirno_estate_event.29 days = 365 random = 365 }
+		}
 	}
 	on_granted_province = {
 		if = {
@@ -127,9 +130,11 @@ estate_warshipgirls_canteen = {
 			  	trade_goods = spices    #香料
  	  	  	trade_goods = incense   #熏香
 			  	trade_goods = tobacco   #烟草
+ 			 		trade_goods = livestock #牲畜
  	  		} 
 			}
 			add_province_modifier = { name = estate_warshipgirls_canteen_mod duration = -1 }
+			add_province_modifier = { name = estate_warshipgirls_build_cost_mod duration = 18250 }
 		}
 		else_if = {
 			limit = { has_province_modifier = estate_warshipgirls_canteen_mod }
@@ -155,7 +160,12 @@ estate_warshipgirls_navy_dock = {
  	 	  naval_supplies = 1   #船具
  	 	}
  	}
-	on_granted = { custom_tooltip = estate_warshipgirls_navy_dock_tooltip }
+	on_granted = {
+		custom_tooltip = estate_warshipgirls_navy_dock_tooltip
+		hidden_effect = { 
+			country_event = { id = Cirno_estate_event.3 days = 1 random = 364 } 
+		}
+	}
 	on_granted_province = {
 		if = {
 			limit = { 
@@ -168,6 +178,7 @@ estate_warshipgirls_navy_dock = {
  	     	}
 			}
 			add_province_modifier = { name = estate_warshipgirls_navy_dock_mod duration = -1 }
+			add_province_modifier = { name = estate_warshipgirls_build_cost_mod duration = 18250 }
 		}
 		else_if = {
 			limit = { has_province_modifier = estate_warshipgirls_navy_dock_mod }
@@ -191,7 +202,12 @@ estate_warshipgirls_ring_factory = {
  			ring = 1   #幻萌戒指
  		}
  	}
-	on_granted = { custom_tooltip = estate_warshipgirls_ring_factory_tooltip }
+	on_granted = {
+		custom_tooltip = estate_warshipgirls_ring_factory_tooltip
+		hidden_effect = { 
+			country_event = { id = Cirno_estate_event.21 days = 365 random = 365 } 
+		}
+	}
 	on_granted_province = {
 		if = {
 			limit = { 
@@ -202,6 +218,7 @@ estate_warshipgirls_ring_factory = {
 				} 
 			}
 			add_province_modifier = { name = estate_warshipgirls_ring_factory_mod duration = -1 }
+			add_province_modifier = { name = estate_warshipgirls_build_cost_mod duration = 18250 }
 		}
 		else_if = {
 			limit = { has_province_modifier = estate_warshipgirls_ring_factory_mod }
@@ -225,12 +242,17 @@ estate_warshipgirls_jiangnan_leather = {
  		  dyes = 1    #染料
  			silk = 1    #丝绸
  			cloth = 1   #布料
- 		  glass = 1   #玻璃
  		  cotton = 1  #棉花
  			skirts = 1  #幻萌小裙子
  		}
  	}
-	on_granted = { custom_tooltip = estate_warshipgirls_jiangnan_leather_tooltip }
+	on_granted = { 
+		custom_tooltip = estate_warshipgirls_jiangnan_leather_tooltip 
+		hidden_effect = { 
+			country_event = { id = Cirno_estate_event.4 days = 1 random = 364 }
+			country_event = { id = Cirno_estate_event.30 days = 365 random = 365 }
+		}
+	}
 	on_granted_province = {
 		if = {
 			limit = { 
@@ -240,12 +262,12 @@ estate_warshipgirls_jiangnan_leather = {
  		      trade_goods = dyes    #染料
  			    trade_goods = silk    #丝绸
  			    trade_goods = cloth   #布料
- 		      trade_goods = glass   #玻璃
  		      trade_goods = cotton  #棉花
  			    trade_goods = skirts  #幻萌小裙子
 				} 
 			}
 			add_province_modifier = { name = estate_warshipgirls_jiangnan_leather_mod duration = -1 }
+			add_province_modifier = { name = estate_warshipgirls_build_cost_mod duration = 18250 }
 		}
 		else_if = {
 			limit = { has_province_modifier = estate_warshipgirls_jiangnan_leather_mod }
@@ -285,10 +307,18 @@ estate_warshipgirls_starsapphire_bucks_coffee = {
  	    sugar = 1      #糖
  	    cloves = 1     #丁香
  		  coffee = 1     #咖啡
- 			livestock = 1  #牲畜
  		}
  	}
-	on_granted = { custom_tooltip = estate_warshipgirls_starsapphire_bucks_coffee_tooltip }
+	on_granted = { 
+		custom_tooltip = estate_warshipgirls_starsapphire_bucks_coffee_tooltip 
+		hidden_effect = { 
+			country_event = { id = Cirno_estate_event.22 days = 365 random = 365 }
+			country_event = { id = Cirno_estate_event.24 days = 365 random = 365 }
+			country_event = { id = Cirno_estate_event.26 days = 365 random = 365 }
+			country_event = { id = Cirno_estate_event.27 days = 365 random = 365 }
+			country_event = { id = Cirno_estate_event.31 days = 365 random = 365 }
+		}
+	}
 	on_granted_province = {
 		if = {
 			limit = { 
@@ -298,10 +328,10 @@ estate_warshipgirls_starsapphire_bucks_coffee = {
 					trade_goods = sugar     #糖
 					trade_goods = cloves    #丁香
  		   		trade_goods = coffee    #咖啡
- 			 		trade_goods = livestock #牲畜
 				} 
 			}
 			add_province_modifier = { name = estate_warshipgirls_starsapphire_bucks_coffee_mod duration = -1 }
+			add_province_modifier = { name = estate_warshipgirls_build_cost_mod duration = 18250 }
 		}
 		else_if = {
 			limit = { has_province_modifier = estate_warshipgirls_starsapphire_bucks_coffee_mod }
@@ -323,8 +353,7 @@ estate_warshipgirls_The_Knights_of_Paediatrics = {
 		heir_chance = -0.25         #榨榨你的
 	}
 	benefits = {
-		allowed_marine_fraction = 0.25 
-		global_sailors_modifier = 0.25 #小舰娘加入战场
+		allowed_marine_fraction = 0.25 #小舰娘加入战场
 	}
 	cooldown_years = 50
 	ai_will_do = { factor = 0 }
@@ -333,11 +362,12 @@ estate_warshipgirls_The_Knights_of_Paediatrics = {
 #赞助北宅
 estate_warshipgirls_patronage_of_the_arts_Tirpitz = {
 	icon = GFX_estate_warshipgirls_patronage_of_the_arts_Tirpitz
-	loyalty = -0.01                       #猫猫抗议
-	influence = -0.05                     #有损形象
+	loyalty = -0.01                      #猫猫抗议
+	influence = 0.05
  	is_valid = { 
  		OR = { 
  			paper = 1     #纸
+ 		  glass = 1     #玻璃
  			chinaware = 1 #瓷器
  		}
  	}
@@ -356,16 +386,22 @@ estate_warshipgirls_patronage_of_the_arts_Tirpitz = {
 		else = { add_prestige = -30 }
 		add_adm_power = -100
 		custom_tooltip = estate_warshipgirls_patronage_of_the_arts_Tirpitz_tooltip
+		hidden_effect = { 
+			country_event = { id = Cirno_estate_event.20 days = 365 random = 365 }
+			country_event = { id = Cirno_estate_event.28 days = 365 random = 365 }
+		}
 	}
 	on_granted_province = {
 		if = {
 			limit = { 
 				OR = { 
  		   		trade_goods = paper
+ 		   		trade_goods = glass
  		   		trade_goods = chinaware
 				} 
 			}
 			add_province_modifier = { name = estate_warshipgirls_patronage_of_the_arts_Tirpitz_mod duration = -1 }
+			add_province_modifier = { name = estate_warshipgirls_build_cost_mod duration = 18250 }
 		}
 		else_if = {
 			limit = { has_province_modifier = estate_warshipgirls_patronage_of_the_arts_Tirpitz_mod }
@@ -380,15 +416,41 @@ estate_warshipgirls_patronage_of_the_arts_Tirpitz = {
 #舰娘陆战队
 estate_warshipgirls_marine = {
 	icon = GFX_estate_warshipgirls_marine
-	influence = 0.1
+	max_absolutism = 10
+	loyalty = 0.2
+	influence = 0.2
+	is_valid = { ai = no }
 	can_select = { mil_power = 200 }
 	can_revoke = { always = no }
 	benefits = {
-		allowed_marine_fraction = 0.25
+		allowed_marine_fraction = -1
+		global_sailors_modifier = 1
 	}
-	on_granted = { add_mil_power = -200 add_country_modifier = { name = hm_warshipgirls_marine0 duration = -1 } }
+	loyalty_scaled_conditional_modifier = {
+		trigger = { ai = no }
+		modifier = {
+			war_exhaustion = -0.25             #舰娘替凡人承受的战争压力
+			military_tactics = 0.25            #舰娘可以继承同名历史人物的经验
+			stability_cost_to_declare_war = -1 #为战争而生
+		}
+	}
+	influence_scaled_conditional_modifier = {
+		trigger = { ai = no }
+		modifier = { 
+			war_exhaustion_cost = -1		       #舰娘土地占比越高，就越能支持你的军事行动
+			monthly_militarized_society = 1    #军事化社会，原版普鲁士机制
+			yearly_army_professionalism = 0.1  #舰娘当然是职业化的军事组织
+		}
+	}
+	on_granted = { 
+		add_mil_power = -200
+		hidden_effect = { 
+			country_event = { id = Cirno_estate_event.23 } 
+		}
+	}
 	ai_will_do = { factor = 0 }
 }
+
 
 #晃眼！好马闺女
 estate_warshipgirls_uma = {
@@ -403,7 +465,7 @@ estate_warshipgirls_uma = {
 	on_granted = { 
 		add_mil_power = -200 
 		custom_tooltip = estate_warshipgirls_uma_tooltip 
-		hidden_effect = { country_event = { id = Cirno_estate_event.1 } }
+		hidden_effect = { country_event = { id = Cirno_estate_event.10 } }
 	}
 	on_granted_province = {
 		if = {

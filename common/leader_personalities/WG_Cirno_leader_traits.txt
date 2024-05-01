@@ -1,7 +1,7 @@
 WG_CIRNO_leader_trait_sakuya = {
 	allow = { always = no }
-	siege_ability = 0.5 #时停砍守军
-	morale_damage = 0.5 #时停秒指挥官
+	siege_ability = 0.5 #ʱͣ���ؾ�
+	morale_damage = 0.5 #ʱͣ��ָ�ӹ�
 }
 
 WG_CIRNO_leader_trait_MIMIMI = {

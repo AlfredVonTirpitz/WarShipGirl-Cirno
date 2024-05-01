@@ -1,16 +1,10 @@
-Cirno_GreatProject1 = { #Áê™Èú≤ËØ∫Â¶ÆÂ®Ö
+Cirno_GreatProject1 = { #Á˜¬∂≈µƒ›Ê´
 	date = 9999.09.09 time = { months = 0 } build_cost = 0 can_be_moved = no starting_tier = 0 type = monument
-	build_trigger = { 
-		has_global_flag = Cirno_GreatProject1 
-		has_province_flag = Cirno_GreatProject_flag1
-	}
-	on_built = {
-		has_global_flag = Cirno_GreatProject1 
-		has_province_flag = Cirno_GreatProject_flag1
-	}
+	build_trigger = { has_province_flag = Cirno_GreatProject_flag1 }
+	on_built = { has_province_flag = Cirno_GreatProject_flag1 }
 	tier_0 = { upgrade_time = { months = 0 } cost_to_upgrade = { factor = 0 } }
 	tier_1 = {
-		upgrade_time = { months = 333 } cost_to_upgrade = { factor = 999 }
+		upgrade_time = { months = 99 } cost_to_upgrade = { factor = 999 }
 		province_modifiers = {
 			local_tax_modifier = 0.333
 			province_trade_power_value = 333
@@ -21,7 +15,7 @@ Cirno_GreatProject1 = { #Áê™Èú≤ËØ∫Â¶ÆÂ®Ö
 		}
 	}
 	tier_2 = {
-		upgrade_time = { months = 333 } cost_to_upgrade = { factor = 999 }
+		upgrade_time = { months = 99 } cost_to_upgrade = { factor = 999 }
 		province_modifiers = {
 			local_tax_modifier = 0.666
 			province_trade_power_value = 666
@@ -32,7 +26,7 @@ Cirno_GreatProject1 = { #Áê™Èú≤ËØ∫Â¶ÆÂ®Ö
 		}
 	}
 	tier_3 = {
-		upgrade_time = { months = 333 } cost_to_upgrade = { factor = 999 }
+		upgrade_time = { months = 99 } cost_to_upgrade = { factor = 999 }
 		province_modifiers = {
 			local_tax_modifier = 0.999
 			province_trade_power_value = 999
@@ -44,16 +38,10 @@ Cirno_GreatProject1 = { #Áê™Èú≤ËØ∫Â¶ÆÂ®Ö
 	}
 }
 
-Cirno_GreatProject2 = { #Ëã±ÈõÑÈÖíÈ¶Ü
+Cirno_GreatProject2 = { #”¢–€æ∆π›
 	date = 9999.09.09 time = { months = 0 } build_cost = 0 can_be_moved = no starting_tier = 0 type = monument
-	build_trigger = { 
-		has_global_flag = Cirno_GreatProject2
-		has_province_flag = Cirno_GreatProject_flag2
-	}
-	on_built = {
-		has_global_flag = Cirno_GreatProject2
-		has_province_flag = Cirno_GreatProject_flag2
-	}
+	build_trigger = { has_province_flag = Cirno_GreatProject_flag2 }
+	on_built = { has_province_flag = Cirno_GreatProject_flag2 }
 	tier_0 = { upgrade_time = { months = 0 } cost_to_upgrade = { factor = 0 } }
 	tier_1 = {
 		upgrade_time = { months = 12 } cost_to_upgrade = { factor = 1000 }
@@ -80,7 +68,7 @@ Cirno_GreatProject2 = { #Ëã±ÈõÑÈÖíÈ¶Ü
 		  owner = { 
 		    country_event = { id = Cirno_GreatProject.2 } 
 		    hidden_effect = { 
-		      country_event = { id = Cirno_Leader.100 days = 1 }  #ÂçáÁ∫ßÊ£ÄÊü•
+		      country_event = { id = Cirno_Leader.100 days = 1 }  #…˝º∂ºÏ≤È
 		      set_country_flag = Cirno_GreatProject2_tier2
 		    }
 		  }
@@ -106,16 +94,10 @@ Cirno_GreatProject2 = { #Ëã±ÈõÑÈÖíÈ¶Ü
 	}
 }
 
-Cirno_GreatProject3 = { #Á≥ú‰∏âÂ∫ô
+Cirno_GreatProject3 = { #√”»˝√Ì
 	date = 9999.09.09 time = { months = 0 } build_cost = 0 can_be_moved = no starting_tier = 0 type = monument
-	build_trigger = { 
-		has_global_flag = Cirno_GreatProject3
-		has_province_flag = Cirno_GreatProject_flag3
-	}
-	on_built = {
-		has_global_flag = Cirno_GreatProject3
-		has_province_flag = Cirno_GreatProject_flag3
-	}
+	build_trigger = { has_province_flag = Cirno_GreatProject_flag3 }
+	on_built = { has_province_flag = Cirno_GreatProject_flag3 }
 	tier_0 = { upgrade_time = { months = 0 } cost_to_upgrade = { factor = 0 } }
 	tier_1 = {
 		upgrade_time = { months = 33 } cost_to_upgrade = { factor = 333 }
@@ -173,11 +155,137 @@ Cirno_GreatProject3 = { #Á≥ú‰∏âÂ∫ô
 		  custom_tooltip = Cirno_GreatProject3_tier3_tooltip
 		  owner = { 
 		    hidden_effect = { 
-		      set_country_flag = Cirno_GreatProject3_tier3 
+		      set_country_flag = Cirno_GreatProject3_tier3
 		      country_event = { id = Cirno_event.33 }
 		      country_event = { id = Cirno_GreatProject.3 }
-		    } 
+		    }
 		  }
 		}
 	}
 }
+
+Cirno_GreatProject4 = { #√◊π˛”Œ
+	date = 9999.09.09 time = { months = 0 } build_cost = 0 can_be_moved = no starting_tier = 0 type = monument
+	build_trigger = { has_province_flag = Cirno_GreatProject_flag4 }
+	on_built = { has_province_flag = Cirno_GreatProject_flag4 }
+	tier_0 = { upgrade_time = { months = 0 } cost_to_upgrade = { factor = 0 } }
+	tier_1 = {
+		upgrade_time = { months = 12 } cost_to_upgrade = { factor = 500 }
+		province_modifiers = {
+			local_tax = 12.8
+			local_development_cost = -0.25
+		}
+		on_upgraded = {
+		  custom_tooltip = Cirno_GreatProject4_tier1_tooltip
+		  owner = { hidden_effect = { set_country_flag = Cirno_GreatProject4_tier1 } }
+		}
+	}
+	tier_2 = {
+		upgrade_time = { months = 24 } cost_to_upgrade = { factor = 1000 }
+		province_modifiers = {
+			local_tax = 32.8
+			local_development_cost = -0.5
+		}
+		on_upgraded = {
+		  custom_tooltip = Cirno_GreatProject4_tier2_tooltip
+		  owner = { hidden_effect = { set_country_flag = Cirno_GreatProject4_tier2 } }
+		}
+	}
+	tier_3 = {
+		upgrade_time = { months = 36 } cost_to_upgrade = { factor = 1500 }
+		province_modifiers = {
+			local_tax = 64.8
+			local_development_cost = -1
+		}
+		on_upgraded = {
+		  custom_tooltip = Cirno_GreatProject4_tier3_tooltip
+		  owner = { hidden_effect = { set_country_flag = Cirno_GreatProject4_tier3 } }
+		}
+	}
+}
+Cirno_GreatProject5 = { #–ƒ¡È–≈±Í
+	date = 9999.09.09 time = { months = 0 } build_cost = 0 can_be_moved = no starting_tier = 0 type = monument
+	build_trigger = { has_province_flag = Cirno_GreatProject_flag5 }
+	on_built = { has_province_flag = Cirno_GreatProject_flag5 }
+	tier_0 = { upgrade_time = { months = 0 } cost_to_upgrade = { factor = 0 } }
+	tier_1 = {
+		upgrade_time = { months = 12 } cost_to_upgrade = { factor = 1000 }
+		province_modifiers = {
+			local_unrest = -99.99
+			local_core_creation = -9.99
+			local_years_of_nationalism = -99
+			local_culture_conversion_cost = -9.99
+			local_culture_conversion_time = -9.99
+			local_missionary_strength = 9.99
+		}
+	}
+	tier_2 = {
+		upgrade_time = { months = 24 } cost_to_upgrade = { factor = 1000 }
+		area_modifier = {
+			local_unrest = -99.99
+			local_core_creation = -9.99
+			local_years_of_nationalism = -99
+			local_culture_conversion_cost = -9.99
+			local_culture_conversion_time = -9.99
+			local_missionary_strength = 9.99
+		}
+	}
+	tier_3 = {
+		upgrade_time = { months = 36 } cost_to_upgrade = { factor = 1000 }
+		region_modifier = {
+			local_unrest = -99.99
+			local_core_creation = -9.99
+			local_years_of_nationalism = -99
+			local_culture_conversion_cost = -9.99
+			local_culture_conversion_time = -9.99
+			local_missionary_strength = 9.99
+		}
+	}
+}
+Cirno_GreatProject6 = { #»À∫Õƒ∏÷Ì≈‰÷÷∑±÷≥÷––ƒ
+	date = 9999.09.09 time = { months = 0 } build_cost = 0 can_be_moved = no starting_tier = 0 type = monument
+	build_trigger = { has_province_flag = Cirno_GreatProject_flag6 }
+	on_built = { has_province_flag = Cirno_GreatProject_flag6 }
+	tier_0 = { upgrade_time = { months = 0 } cost_to_upgrade = { factor = 0 } }
+	tier_1 = {
+		upgrade_time = { months = 12 } cost_to_upgrade = { factor = 1000 }
+		province_modifiers = {
+			supply_limit = 10
+			local_manpower = -0.5
+			local_development_cost = -0.25
+		}
+		country_modifiers = { 
+			global_manpower_modifier = 0.1
+			global_sailors_modifier = 0.1
+		}
+	}
+	tier_2 = {
+		upgrade_time = { months = 24 } cost_to_upgrade = { factor = 1000 }
+		province_modifiers = {
+			supply_limit = 20
+			local_manpower = -1
+			local_development_cost = -0.5
+		}
+		area_modifier = {
+			global_manpower_modifier = 0.2
+			global_sailors_modifier = 0.2
+			global_prosperity_growth = 0.1
+		}
+	}
+	tier_3 = {
+		upgrade_time = { months = 36 } cost_to_upgrade = { factor = 1000 }
+		province_modifiers = {
+			supply_limit = 30
+			local_manpower = -2
+			local_development_cost = -1
+		}
+		country_modifiers = { 
+			global_regiment_cost = -0.1
+			global_manpower_modifier = 0.2
+			global_sailors_modifier = 0.2
+			global_prosperity_growth = 0.1
+			stability_cost_modifier = -0.5
+		}
+	}
+}
+
