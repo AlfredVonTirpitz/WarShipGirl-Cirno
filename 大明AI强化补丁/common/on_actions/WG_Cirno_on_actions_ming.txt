@@ -1,5 +1,0 @@
-on_startup = {
-	events = {
-		Cirno_ming_event.1
-	}
-}
