@@ -1,30 +1,97 @@
 spriteTypes = {
-	spriteType = {name = "Cirno_yuyu_damaoxian_eventPicture1" texturefile = "gfx//eventPicture//Cirno_yuyu_damaoxian_eventPicture1.png" }
+	spriteType = { name = "Cirno_eventPicture0" texturefile = "gfx//eventPicture//Cirno_eventPicture0.png" }
+	spriteType = { name = "Cirno_bossPicture1" texturefile = "gfx//eventPicture//Cirno_bossPicture1.png" }
+	
+	spriteType = { name = "GFX_evtpic_Cirno_estate1" texturefile = "gfx//eventPicture//evtpic_Cirno_estate1.png" }
+	spriteType = { name = "GFX_evtpic_Cirno_estate2" texturefile = "gfx//eventPicture//evtpic_Cirno_estate2.png" }
+	spriteType = { name = "GFX_evtpic_Cirno_estate3" texturefile = "gfx//eventPicture//evtpic_Cirno_estate3.png" }
+	spriteType = { name = "GFX_evtpic_Cirno_estate4" texturefile = "gfx//eventPicture//evtpic_Cirno_estate4.png" }
+	spriteType = { name = "GFX_evtpic_Cirno_estate5" texturefile = "gfx//eventPicture//evtpic_Cirno_estate5.png" }
+	spriteType = { name = "GFX_evtpic_Cirno_estate6" texturefile = "gfx//eventPicture//evtpic_Cirno_estate6.png" }
+	spriteType = { name = "GFX_evtpic_Cirno_estate7" texturefile = "gfx//eventPicture//evtpic_Cirno_estate7.png" }
+	spriteType = { name = "GFX_evtpic_Cirno_estate8" texturefile = "gfx//eventPicture//evtpic_Cirno_estate8.png" }
+	spriteType = { name = "GFX_evtpic_Cirno_estate9" texturefile = "gfx//eventPicture//evtpic_Cirno_estate9.png" }
+	spriteType = { name = "GFX_evtpic_Cirno_estate10" texturefile = "gfx//eventPicture//evtpic_Cirno_estate10.png" }
+	spriteType = { name = "GFX_evtpic_Cirno_estate11" texturefile = "gfx//eventPicture//evtpic_Cirno_estate11.png" }
+	spriteType = { name = "GFX_evtpic_Cirno_estate12" texturefile = "gfx//eventPicture//evtpic_Cirno_estate12.png" }
+	spriteType = { name = "GFX_evtpic_Cirno_estate13" texturefile = "gfx//eventPicture//evtpic_Cirno_estate13.png" }
+	spriteType = { name = "GFX_evtpic_Cirno_estate14" texturefile = "gfx//eventPicture//evtpic_Cirno_estate14.png" }
+	spriteType = { name = "GFX_evtpic_Cirno_estate15" texturefile = "gfx//eventPicture//evtpic_Cirno_estate15.png" }
+	spriteType = { name = "GFX_evtpic_Cirno_estate16" texturefile = "gfx//eventPicture//evtpic_Cirno_estate16.png" }
+	spriteType = { name = "GFX_evtpic_Cirno_estate17" texturefile = "gfx//eventPicture//evtpic_Cirno_estate17.png" }
+	spriteType = { name = "GFX_evtpic_Cirno_estate18" texturefile = "gfx//eventPicture//evtpic_Cirno_estate18.png" }
+	spriteType = { name = "GFX_evtpic_Cirno_estate19" texturefile = "gfx//eventPicture//evtpic_Cirno_estate19.png" }
+	spriteType = { name = "GFX_evtpic_Cirno_estate20" texturefile = "gfx//eventPicture//evtpic_Cirno_estate20.png" }
+	spriteType = { name = "GFX_evtpic_Cirno_estate21" texturefile = "gfx//eventPicture//evtpic_Cirno_estate21.png" }
+	spriteType = { name = "GFX_evtpic_Cirno_estate22" texturefile = "gfx//eventPicture//evtpic_Cirno_estate22.png" }
+	spriteType = { name = "GFX_evtpic_Cirno_estate23" texturefile = "gfx//eventPicture//evtpic_Cirno_estate23.png" }
+	spriteType = { name = "GFX_evtpic_Cirno_estate24" texturefile = "gfx//eventPicture//evtpic_Cirno_estate24.png" }
+	spriteType = { name = "GFX_evtpic_Cirno_estate25" texturefile = "gfx//eventPicture//evtpic_Cirno_estate25.png" }
+	spriteType = { name = "GFX_evtpic_Cirno_estate26" texturefile = "gfx//eventPicture//evtpic_Cirno_estate26.png" }
+	spriteType = { name = "GFX_evtpic_Cirno_estate27" texturefile = "gfx//eventPicture//evtpic_Cirno_estate27.png" }
+	spriteType = { name = "GFX_evtpic_Cirno_estate28" texturefile = "gfx//eventPicture//evtpic_Cirno_estate28.png" }
+	spriteType = { name = "GFX_evtpic_Cirno_estate29" texturefile = "gfx//eventPicture//evtpic_Cirno_estate29.png" }
+	spriteType = { name = "GFX_evtpic_Cirno_estate30" texturefile = "gfx//eventPicture//evtpic_Cirno_estate30.png" }
+	spriteType = { name = "GFX_evtpic_Cirno_estate31" texturefile = "gfx//eventPicture//evtpic_Cirno_estate31.png" }
+	spriteType = { name = "GFX_evtpic_Cirno_estate32" texturefile = "gfx//eventPicture//evtpic_Cirno_estate32.png" }
+	spriteType = { name = "GFX_evtpic_Cirno_estate33" texturefile = "gfx//eventPicture//evtpic_Cirno_estate33.png" }
+	spriteType = { name = "GFX_evtpic_Cirno_estate34" texturefile = "gfx//eventPicture//evtpic_Cirno_estate34.png" }
+	spriteType = { name = "GFX_evtpic_Cirno_estate35" texturefile = "gfx//eventPicture//evtpic_Cirno_estate35.png" }
+	spriteType = { name = "GFX_evtpic_Cirno_estate36" texturefile = "gfx//eventPicture//evtpic_Cirno_estate36.png" }
+	spriteType = { name = "GFX_evtpic_Cirno_estate37" texturefile = "gfx//eventPicture//evtpic_Cirno_estate37.png" }
+	spriteType = { name = "GFX_evtpic_Cirno_estate38" texturefile = "gfx//eventPicture//evtpic_Cirno_estate38.png" }
+	spriteType = { name = "GFX_evtpic_Cirno_estate39" texturefile = "gfx//eventPicture//evtpic_Cirno_estate39.png" }
+	spriteType = { name = "GFX_evtpic_Cirno_estate99a" texturefile = "gfx//eventPicture//evtpic_Cirno_estate99a.png" }
+	spriteType = { name = "GFX_evtpic_Cirno_estate99b" texturefile = "gfx//eventPicture//evtpic_Cirno_estate99b.png" }
+	spriteType = { name = "GFX_evtpic_Cirno_estate99c" texturefile = "gfx//eventPicture//evtpic_Cirno_estate99c.png" }
+	spriteType = { name = "GFX_evtpic_Cirno_estate99d" texturefile = "gfx//eventPicture//evtpic_Cirno_estate99d.png" }
+	spriteType = { name = "GFX_evtpic_Cirno_estate99e" texturefile = "gfx//eventPicture//evtpic_Cirno_estate99e.png" }
+	spriteType = { name = "GFX_evtpic_Cirno_estate99f" texturefile = "gfx//eventPicture//evtpic_Cirno_estate99f.png" }
+	spriteType = { name = "GFX_evtpic_Cirno_estate100" texturefile = "gfx//eventPicture//evtpic_Cirno_estate100.png" }
+	spriteType = { name = "GFX_evtpic_Cirno_estate101" texturefile = "gfx//eventPicture//evtpic_Cirno_estate101.png" }
+
+	spriteType = {name = "GFX_evtpic_Cirno_sex1" texturefile = "gfx//eventPicture//evtpic_Cirno_sex1.png" }
+	spriteType = {name = "GFX_evtpic_Cirno_sex2" texturefile = "gfx//eventPicture//evtpic_Cirno_sex2.png" }
+	spriteType = {name = "GFX_evtpic_Cirno_sex3" texturefile = "gfx//eventPicture//evtpic_Cirno_sex3.png" }
+	spriteType = {name = "GFX_evtpic_Cirno_sex100" texturefile = "gfx//eventPicture//evtpic_Cirno_sex100.png" }
+	spriteType = {name = "GFX_evtpic_Cirno_sex101" texturefile = "gfx//eventPicture//evtpic_Cirno_sex101.png" }
+
+	spriteType = { name = "GFX_evtpic_Cirno_policy1" texturefile = "gfx//eventPicture//evtpic_Cirno_policy1.png" }
+	
+	spriteType = { name = "GFX_evtpic_Cirno_yuyu_damaoxian1" texturefile = "gfx//eventPicture//evtpic_Cirno_yuyu_damaoxian1.png" }
+	spriteType = { name = "GFX_evtpic_Cirno_yuyu_damaoxian7" texturefile = "gfx//eventPicture//evtpic_Cirno_yuyu_damaoxian7.png" }
+	spriteType = { name = "GFX_evtpic_Cirno_yuyu_damaoxian10" texturefile = "gfx//eventPicture//evtpic_Cirno_yuyu_damaoxian10.png" }
+	spriteType = { name = "GFX_evtpic_Cirno_yuyu_damaoxian12" texturefile = "gfx//eventPicture//evtpic_Cirno_yuyu_damaoxian12.png" }
+	spriteType = { name = "GFX_evtpic_Cirno_yuyu_damaoxian20" texturefile = "gfx//eventPicture//evtpic_Cirno_yuyu_damaoxian20.png" }
 	spriteType = {name = "Cirno_yuyu_damaoxian_eventPicture2" texturefile = "gfx//eventPicture//Cirno_yuyu_damaoxian_eventPicture2.png" }
 	spriteType = {name = "Cirno_yuyu_damaoxian_eventPicture3" texturefile = "gfx//eventPicture//Cirno_yuyu_damaoxian_eventPicture3.png" }
 	spriteType = {name = "Cirno_yuyu_damaoxian_eventPicture4" texturefile = "gfx//eventPicture//Cirno_yuyu_damaoxian_eventPicture4.png" }
 	spriteType = {name = "Cirno_yuyu_damaoxian_eventPicture5" texturefile = "gfx//eventPicture//Cirno_yuyu_damaoxian_eventPicture5.png" }
 	spriteType = {name = "Cirno_yuyu_damaoxian_eventPicture6" texturefile = "gfx//eventPicture//Cirno_yuyu_damaoxian_eventPicture6.png" }
-	spriteType = {name = "Cirno_yuyu_damaoxian_eventPicture7" texturefile = "gfx//eventPicture//Cirno_yuyu_damaoxian_eventPicture7.png" }
 	spriteType = {name = "Cirno_yuyu_damaoxian_eventPicture8" texturefile = "gfx//eventPicture//Cirno_yuyu_damaoxian_eventPicture8.png" }
 	spriteType = {name = "Cirno_yuyu_damaoxian_eventPicture9" texturefile = "gfx//eventPicture//Cirno_yuyu_damaoxian_eventPicture9.png" }
-	spriteType = {name = "Cirno_yuyu_damaoxian_eventPicture10" texturefile = "gfx//eventPicture//Cirno_yuyu_damaoxian_eventPicture10.png" }
 	spriteType = {name = "Cirno_yuyu_damaoxian_eventPicture11" texturefile = "gfx//eventPicture//Cirno_yuyu_damaoxian_eventPicture11.png" }
-	spriteType = {name = "Cirno_yuyu_damaoxian_eventPicture12" texturefile = "gfx//eventPicture//Cirno_yuyu_damaoxian_eventPicture12.png" }
 	
+	spriteType = { name = "GFX_evtpic_Cirno2" texturefile = "gfx//eventPicture//evtpic_Cirno2.png" }
+	spriteType = { name = "GFX_evtpic_Cirno3" texturefile = "gfx//eventPicture//evtpic_Cirno3.png" }
+	spriteType = { name = "GFX_evtpic_Cirno4" texturefile = "gfx//eventPicture//evtpic_Cirno4.png" }
+	spriteType = { name = "GFX_evtpic_Cirno5" texturefile = "gfx//eventPicture//evtpic_Cirno5.png" }
+	spriteType = { name = "GFX_evtpic_Cirno6" texturefile = "gfx//eventPicture//evtpic_Cirno6.png" }
+	spriteType = { name = "GFX_evtpic_Cirno10" texturefile = "gfx//eventPicture//evtpic_Cirno10.png" }
+	spriteType = { name = "GFX_evtpic_Cirno33" texturefile = "gfx//eventPicture//evtpic_Cirno33.png" }
+	spriteType = { name = "GFX_evtpic_Cirno50" texturefile = "gfx//eventPicture//evtpic_Cirno50.png" }
+	spriteType = { name = "GFX_evtpic_Cirno99" texturefile = "gfx//eventPicture//evtpic_Cirno99.png" }
+	spriteType = { name = "GFX_evtpic_Cirno100" texturefile = "gfx//eventPicture//evtpic_Cirno100.png" }
+	spriteType = { name = "GFX_evtpic_Cirno103" texturefile = "gfx//eventPicture//evtpic_Cirno103.png" }
+	spriteType = { name = "GFX_evtpic_Cirno104" texturefile = "gfx//eventPicture//evtpic_Cirno104.png" }
+	spriteType = { name = "GFX_evtpic_Cirno110" texturefile = "gfx//eventPicture//evtpic_Cirno110.png" }
 	
 	spriteType = { name = "Cirno_eventPicture1" texturefile = "gfx//eventPicture//Cirno_eventPicture1.png" }
-	spriteType = { name = "Cirno_eventPicture2" texturefile = "gfx//eventPicture//Cirno_eventPicture2.png" }
-	spriteType = { name = "Cirno_eventPicture3" texturefile = "gfx//eventPicture//Cirno_eventPicture3.png" }
-	spriteType = { name = "Cirno_eventPicture4" texturefile = "gfx//eventPicture//Cirno_eventPicture4.png" }
 	spriteType = { name = "Cirno_eventPicture5" texturefile = "gfx//eventPicture//Cirno_eventPicture5.png" }
 	spriteType = { name = "Cirno_eventPicture6" texturefile = "gfx//eventPicture//Cirno_eventPicture6.png" }
 	spriteType = { name = "Cirno_eventPicture7" texturefile = "gfx//eventPicture//Cirno_eventPicture7.png" }
 	spriteType = { name = "Cirno_eventPicture8" texturefile = "gfx//eventPicture//Cirno_eventPicture8.png" }
 	spriteType = { name = "Cirno_eventPicture9" texturefile = "gfx//eventPicture//Cirno_eventPicture9.png" }
-	spriteType = { name = "Cirno_eventPicture33" texturefile = "gfx//eventPicture//Cirno_eventPicture33.png" }
-	spriteType = { name = "Cirno_eventPicture99" texturefile = "gfx//eventPicture//Cirno_eventPicture99.png" }
-	spriteType = { name = "Cirno_eventPicture100" texturefile = "gfx//eventPicture//Cirno_eventPicture100.png" }
 	spriteType = { name = "Cirno_eventPicture101" texturefile = "gfx//eventPicture//Cirno_eventPicture101.png" }
 	spriteType = { name = "Cirno_eventPicture102" texturefile = "gfx//eventPicture//Cirno_eventPicture102.png" }
 	spriteType = { name = "Cirno_eventPicture103" texturefile = "gfx//eventPicture//Cirno_eventPicture103.png" }
@@ -34,7 +101,6 @@ spriteTypes = {
 	spriteType = { name = "Cirno_eventPicture107" texturefile = "gfx//eventPicture//Cirno_eventPicture107.png" }
 	spriteType = { name = "Cirno_eventPicture108" texturefile = "gfx//eventPicture//Cirno_eventPicture108.png" }
 	spriteType = { name = "Cirno_eventPicture109" texturefile = "gfx//eventPicture//Cirno_eventPicture109.png" }
-	spriteType = { name = "Cirno_eventPicture110" texturefile = "gfx//eventPicture//Cirno_eventPicture110.png" }
 	spriteType = { name = "Cirno_eventPicture111" texturefile = "gfx//eventPicture//Cirno_eventPicture111.png" }
 	spriteType = { name = "Cirno_eventPicture112" texturefile = "gfx//eventPicture//Cirno_eventPicture112.png" }
 	spriteType = { name = "Cirno_eventPicture113" texturefile = "gfx//eventPicture//Cirno_eventPicture113.png" }
@@ -47,39 +113,9 @@ spriteTypes = {
 	spriteType = { name = "Cirno_eventPicture999" texturefile = "gfx//eventPicture//Cirno_eventPicture999.png" }
 	
 	
-	spriteType = { name = "Cirno_GreatProjectPicture1" texturefile = "gfx//eventPicture//Cirno_GreatProjectPicture1.png" }
-	spriteType = { name = "Cirno_GreatProjectPicture2" texturefile = "gfx//eventPicture//Cirno_GreatProjectPicture2.png" }
-	spriteType = { name = "Cirno_GreatProjectPicture3" texturefile = "gfx//eventPicture//Cirno_GreatProjectPicture3.png" }
-	spriteType = { name = "Cirno_GreatProjectPicture4" texturefile = "gfx//eventPicture//Cirno_GreatProjectPicture4.png" }
-	spriteType = { name = "Cirno_GreatProjectPicture5" texturefile = "gfx//eventPicture//Cirno_GreatProjectPicture5.png" }
-	spriteType = { name = "Cirno_GreatProjectPicture6" texturefile = "gfx//eventPicture//Cirno_GreatProjectPicture6.png" }
-	spriteType = { name = "Cirno_GreatProjectPicture7" texturefile = "gfx//eventPicture//Cirno_GreatProjectPicture7.png" }
-	spriteType = { name = "Cirno_GreatProjectPicture8" texturefile = "gfx//eventPicture//Cirno_GreatProjectPicture8.png" }
-	spriteType = { name = "Cirno_GreatProjectPicture9" texturefile = "gfx//eventPicture//Cirno_GreatProjectPicture9.png" }
+	spriteType = { name = "GFX_evtpic_Cirno_GreatProject2" texturefile = "gfx//eventPicture//evtpic_Cirno_GreatProject2.png" }
+	spriteType = { name = "GFX_evtpic_Cirno_GreatProject3" texturefile = "gfx//eventPicture//evtpic_Cirno_GreatProject3.png" }
 	
-	spriteType = { name = "Cirno_estate_eventPicture1" texturefile = "gfx//eventPicture//Cirno_estate_eventPicture1.png" }
-	spriteType = { name = "Cirno_estate_eventPicture2" texturefile = "gfx//eventPicture//Cirno_estate_eventPicture2.png" }
-	spriteType = { name = "Cirno_estate_eventPicture3" texturefile = "gfx//eventPicture//Cirno_estate_eventPicture3.png" }
-	spriteType = { name = "Cirno_estate_eventPicture4" texturefile = "gfx//eventPicture//Cirno_estate_eventPicture4.png" }
-	spriteType = { name = "Cirno_estate_eventPicture5" texturefile = "gfx//eventPicture//Cirno_estate_eventPicture5.png" }
-	spriteType = { name = "Cirno_estate_eventPicture3" texturefile = "gfx//eventPicture//Cirno_estate_eventPicture3.png" }
-	spriteType = { name = "Cirno_estate_eventPicture7" texturefile = "gfx//eventPicture//Cirno_estate_eventPicture7.png" }
-	spriteType = { name = "Cirno_estate_eventPicture8" texturefile = "gfx//eventPicture//Cirno_estate_eventPicture8.png" }
-	spriteType = { name = "Cirno_estate_eventPicture9" texturefile = "gfx//eventPicture//Cirno_estate_eventPicture9.png" }
-	
-	spriteType = { name = "Cirno_policy_eventPicture1" texturefile = "gfx//eventPicture//Cirno_policy_eventPicture1.png" }
-	
-	spriteType = {name = "Cirno_sex_eventPicture1" texturefile = "gfx//eventPicture//Cirno_sex_eventPicture1.png" }
-	spriteType = {name = "Cirno_sex_eventPicture2" texturefile = "gfx//eventPicture//Cirno_sex_eventPicture2.png" }
-	spriteType = {name = "Cirno_sex_eventPicture3" texturefile = "gfx//eventPicture//Cirno_sex_eventPicture3.png" }
-	spriteType = {name = "Cirno_sex_eventPicture4" texturefile = "gfx//eventPicture//Cirno_sex_eventPicture4.png" }
-	spriteType = {name = "Cirno_sex_eventPicture5" texturefile = "gfx//eventPicture//Cirno_sex_eventPicture5.png" }
-	spriteType = {name = "Cirno_sex_eventPicture6" texturefile = "gfx//eventPicture//Cirno_sex_eventPicture6.png" }
-	spriteType = {name = "Cirno_sex_eventPicture7" texturefile = "gfx//eventPicture//Cirno_sex_eventPicture7.png" }
-	spriteType = {name = "Cirno_sex_eventPicture8" texturefile = "gfx//eventPicture//Cirno_sex_eventPicture8.png" }
-	spriteType = {name = "Cirno_sex_eventPicture9" texturefile = "gfx//eventPicture//Cirno_sex_eventPicture9.png" }
-	spriteType = {name = "Cirno_sex_eventPicture100" texturefile = "gfx//eventPicture//Cirno_sex_eventPicture100.png" }
-	spriteType = {name = "Cirno_sex_eventPicture101" texturefile = "gfx//eventPicture//Cirno_sex_eventPicture101.png" }
 	
 	
 }

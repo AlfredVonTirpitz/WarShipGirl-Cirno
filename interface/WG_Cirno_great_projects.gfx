@@ -14,4 +14,19 @@ spriteTypes = {
 		name = "GFX_great_project_Cirno_GreatProject3"	
 		texturefile = "gfx//interface//great_projects//Cirno_GreatProject3.png"
 	}
+	# 米哈游
+	spriteType = { 
+		name = "GFX_great_project_Cirno_GreatProject4"	
+		texturefile = "gfx//interface//great_projects//Cirno_GreatProject4.png"
+	}
+	# 心灵信标
+	spriteType = { 
+		name = "GFX_great_project_Cirno_GreatProject5"	
+		texturefile = "gfx//interface//great_projects//Cirno_GreatProject5.png"
+	}
+	# 人和母猪配种繁殖中心
+	spriteType = {  
+		name = "GFX_great_project_Cirno_GreatProject6"	
+		texturefile = "gfx//interface//great_projects//Cirno_GreatProject6.png"
+	}
 }

@@ -14,11 +14,6 @@ spriteTypes = {
 		texturefile = "gfx/tooltip/tooltip_port.png"
 		legacy_lazy_load = no
 	}
-	spriteType = { #鱼鱼探险队
-		name = "GFX_tooltip_yuyu"
-		texturefile = "gfx/tooltip/tooltip_yuyu.png"
-		legacy_lazy_load = no
-	}
 	spriteType = { #桑提经商
 		name = "GFX_tooltip_sangti"
 		texturefile = "gfx/tooltip/tooltip_sangti.png"
@@ -95,7 +90,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	
-	#event
+	# 事件
 	spriteType = { #好马闺女
 		name = "GFX_tooltip_Cirno_estate_event1a"
 		texturefile = "gfx/tooltip/tooltip_Cirno_estate_event1a.png"
@@ -116,8 +111,28 @@ spriteTypes = {
 		texturefile = "gfx/tooltip/tooltip_Cirno_estate_event99a.png"
 		legacy_lazy_load = no
 	}
+	spriteType = { # 第九艺术的崛起
+		name = "GFX_tooltip_Cirno_estate_event20b"
+		texturefile = "gfx/tooltip/tooltip_Cirno_estate_event20b.png"
+		legacy_lazy_load = no
+	}
+	spriteType = { # 茶的代替品
+		name = "GFX_tooltip_Cirno_estate_event27c"
+		texturefile = "gfx/tooltip/tooltip_Cirno_estate_event27c.png"
+		legacy_lazy_load = no
+	}
+	spriteType = { # 衣品
+		name = "GFX_tooltip_Cirno_estate_event30"
+		texturefile = "gfx/tooltip/tooltip_Cirno_estate_event30.png"
+		legacy_lazy_load = no
+	}
+	spriteType = { # 咖啡贫乳
+		name = "GFX_tooltip_Cirno_estate_event31a"
+		texturefile = "gfx/tooltip/tooltip_Cirno_estate_event31a.png"
+		legacy_lazy_load = no
+	}
 	
-	#event buff
+	# 事件buff
 	spriteType = { #超级舰女人
 		name = "GFX_tooltip_marine_mod"
 		texturefile = "gfx/tooltip/tooltip_marine_mod.png"
