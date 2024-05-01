@@ -1,0 +1,131 @@
+#行政
+hm_warshipgirls_adm_ideas = {
+	category = ADM
+	trigger = { ai = no }
+	hm_warshipgirls_adm_idea1 = {
+		core_creation = -0.2
+	}
+	hm_warshipgirls_adm_idea2 = {
+		development_cost_modifier = -0.1
+	}
+	hm_warshipgirls_adm_idea3 = {
+		global_unrest = -2
+	}
+	hm_warshipgirls_adm_idea4 = {
+		global_tax_modifier = 0.1
+		all_power_cost = -0.05
+	}
+	hm_warshipgirls_adm_idea5 = {
+		global_missionary_strength = 0.03
+	}
+	hm_warshipgirls_adm_idea6 = {
+		global_spy_defence = 0.5
+	}
+	hm_warshipgirls_adm_idea7 = {
+		state_governing_cost = -0.1
+		monthly_reform_progress = 0.2
+	}
+	hm_warshipgirls_adm_idea8 = {
+		heir_chance = 0.5
+	}
+	hm_warshipgirls_adm_idea9 = {
+		reform_progress_growth = 0.2
+		administrative_efficiency = 0.1
+	}
+	bonus = {
+		country_admin_power = 1
+	}
+	ai_will_do = { factor = 0 }
+}
+
+#外交
+hm_warshipgirls_dip_ideas = { 
+	category = DIP
+	trigger = { ai = no }
+	hm_warshipgirls_dip_idea1 = {
+		culture_conversion_cost = -0.25
+		culture_conversion_time = -0.50
+	}
+	hm_warshipgirls_dip_idea2 = {
+		blockade_efficiency = 2
+		movement_speed_in_fleet_modifier = 20
+	}
+	hm_warshipgirls_dip_idea3 = {
+		global_ship_cost = -0.25
+		global_sailors_modifier = 0.25
+		capture_ship_chance = -1       #维护舰娘已经很辛苦了
+	}
+	hm_warshipgirls_dip_idea4 = {
+		siege_blockade_progress = 5
+		number_of_cannons_modifier = 1
+	}
+	hm_warshipgirls_dip_idea5 = {
+		naval_morale_damage = 0.5
+		may_perform_slave_raid_on_same_religion = yes
+	}
+	hm_warshipgirls_dip_idea6 = {
+		hull_size_modifier = 1
+		global_ship_recruit_speed = 0.5
+	}
+	hm_warshipgirls_dip_idea7 = {
+		diplomatic_reputation = 2
+		province_warscore_cost = -0.25
+	}
+	hm_warshipgirls_dip_idea8 = {
+		production_efficiency = 0.2
+	}
+	hm_warshipgirls_dip_idea9 = {
+		monthly_gold_inflation_modifier = 0.25
+		gold_depletion_chance_modifier = -1
+	}
+	bonus = {
+		country_diplomatic_power = 1
+	}
+	ai_will_do = {factor = 0 }
+}
+
+#军事理念
+hm_warshipgirls_mil_ideas = { 
+	category = MIL
+	trigger = { ai = no }
+	hm_warshipgirls_mil_idea1 = {
+		military_tactics = 0.25
+	}
+	hm_warshipgirls_mil_idea2 = {
+		loot_amount = -2
+		discipline = 0.1
+		years_of_nationalism = -10
+	}
+	hm_warshipgirls_mil_idea3 = {
+		can_bypass_forts = yes
+	}
+	hm_warshipgirls_mil_idea4 = {
+		siege_ability = 0.25
+	}
+	hm_warshipgirls_mil_idea5 = {
+		war_exhaustion = -0.2
+		stability_cost_to_declare_war = -2
+	}
+	hm_warshipgirls_mil_idea6 = {
+		fire_damage = -0.5
+		shock_damage = -0.5
+		morale_damage = -0.5
+		global_attacker_dice_roll_bonus = 5
+		global_defender_dice_roll_bonus = 5
+	}
+	hm_warshipgirls_mil_idea7 = {
+		fire_damage_received = -0.1
+		shock_damage_received = -0.1
+	}
+	hm_warshipgirls_mil_idea8 = {
+		morale_damage = 0.2
+	}
+	hm_warshipgirls_mil_idea9 = {
+		production_efficiency = 0.2
+		global_regiment_cost = -0.2
+	}
+	bonus = {
+		country_military_power = 1
+	}
+	ai_will_do = {factor = 0 }
+}

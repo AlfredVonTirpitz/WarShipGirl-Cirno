@@ -1,0 +1,41 @@
+WG_Cirno_remove_marine_effect = {
+	remove_country_modifier = hm_warshipgirls_marine1
+	remove_country_modifier = hm_warshipgirls_marine2
+	remove_country_modifier = hm_warshipgirls_marine3
+	remove_country_modifier = hm_warshipgirls_marine4
+	remove_country_modifier = hm_warshipgirls_marine5
+	remove_country_modifier = hm_warshipgirls_marine6
+	remove_country_modifier = hm_warshipgirls_marine7
+	remove_country_modifier = hm_warshipgirls_marine8
+	remove_country_modifier = hm_warshipgirls_marine9
+}
+
+WG_Cirno_add_marine_effect1 = {
+	capital_scope = { ROOT = { marine_infantry = PREV } }
+}
+WG_Cirno_add_marine_effect2 = {
+	WG_Cirno_add_marine_effect1 = yes
+	WG_Cirno_add_marine_effect1 = yes
+}
+WG_Cirno_add_marine_effect5 = {
+	WG_Cirno_add_marine_effect2 = yes
+	WG_Cirno_add_marine_effect2 = yes
+	WG_Cirno_add_marine_effect1 = yes
+}
+WG_Cirno_add_marine_effect10 = {
+	WG_Cirno_add_marine_effect5 = yes
+	WG_Cirno_add_marine_effect5 = yes
+}
+WG_Cirno_add_marine_effect20 = {
+	WG_Cirno_add_marine_effect10 = yes
+	WG_Cirno_add_marine_effect10 = yes
+}
+WG_Cirno_add_marine_effect50 = {
+	WG_Cirno_add_marine_effect20 = yes
+	WG_Cirno_add_marine_effect20 = yes
+	WG_Cirno_add_marine_effect10 = yes
+}
+WG_Cirno_add_marine_effect100 = {
+	WG_Cirno_add_marine_effect50 = yes
+	WG_Cirno_add_marine_effect50 = yes
+}

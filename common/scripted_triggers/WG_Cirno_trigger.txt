@@ -1,0 +1,55 @@
+#决议
+WG_Cirno_GreatProject_build_trigger = {
+	units_in_province = owner           #是自己的核心
+	infantry_in_province = 9            #至少九队步兵
+	NOT = { infantry_in_province = 10 } #不到十队步兵
+	NOT = { cavalry_in_province = 1 }   #没有骑兵
+	NOT = { artillery_in_province = 1 } #没有炮兵
+	NOT = { has_construction = any }    #没有其他建筑任务
+}
+
+#舰娘阶级忠诚
+WG_Cirno_estate_loyalty_trigger1 = {
+	NOT = { estate_loyalty = { estate = estate_warshipgirls999 loyalty = 30 } }
+}
+WG_Cirno_estate_loyalty_trigger2 = {
+	estate_loyalty = { estate = estate_warshipgirls999 loyalty = 30 }
+	NOT = { estate_loyalty = { estate = estate_warshipgirls999 loyalty = 80 } }
+}
+WG_Cirno_estate_loyalty_trigger3 = {
+	estate_loyalty = { estate = estate_warshipgirls999 loyalty = 80 }
+}
+#舰娘阶级影响
+WG_Cirno_estate_influence_trigger1 = {
+	NOT = { estate_influence = { estate = estate_warshipgirls999 influence = 30 } }
+}
+WG_Cirno_estate_influence_trigger2 = {
+	estate_influence = { estate = estate_warshipgirls999 influence = 30 }
+	NOT = { estate_influence = { estate = estate_warshipgirls999 influence = 80 } }
+}
+WG_Cirno_estate_influence_trigger3 = {
+	estate_influence = { estate = estate_warshipgirls999 influence = 80 }
+}
+
+#马润影响
+WG_Cirno_estate_marine_influence_trigger1 = {
+	OR = { 
+		has_country_modifier = hm_warshipgirls_marine1 
+		has_country_modifier = hm_warshipgirls_marine4 
+		has_country_modifier = hm_warshipgirls_marine7 
+	}
+}
+WG_Cirno_estate_marine_influence_trigger2 = {
+	OR = { 
+		has_country_modifier = hm_warshipgirls_marine2
+		has_country_modifier = hm_warshipgirls_marine5
+		has_country_modifier = hm_warshipgirls_marine8
+	}
+}
+WG_Cirno_estate_marine_influence_trigger3 = {
+	OR = { 
+		has_country_modifier = hm_warshipgirls_marine3
+		has_country_modifier = hm_warshipgirls_marine6
+		has_country_modifier = hm_warshipgirls_marine9
+	}
+}

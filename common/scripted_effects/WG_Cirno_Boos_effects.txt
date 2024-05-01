@@ -1,0 +1,107 @@
+WG_Cirno_JMN_effect = {
+  set_global_flag = Cirno_Supper_JMN
+  JMN = { 
+    override_country_name = Cirno_TagName_Supper_JMN
+	  add_country_modifier = { name = Cirno_bossmod_luck duration = -1 }
+	  add_country_modifier = { name = Cirno_bossmod_invasion_nation duration = -1 }
+	  add_country_modifier = { name = Cirno_JMNmod1 duration = -1 }
+	  add_country_modifier = { name = Cirno_JMNmod2 duration = -1 }
+	  add_country_modifier = { name = Cirno_JMNmod3 duration = -1 }
+	  add_country_modifier = { name = Cirno_JMNmod4 duration = -1 }
+    set_ai_personality = { personality = ai_militarist locked = yes }
+	  every_country = { add_opinion = { who = JMN modifier = WG_Cirno_boss } }
+	}
+  canada_region = { discover_country = JMN }
+  newfoundland_area = {      change_culture = jan_mayenese change_religion = norse_pagan_reformed add_core = JMN cede_province = JMN }
+  subarctic_islands_area = { change_culture = jan_mayenese change_religion = norse_pagan_reformed add_core = JMN cede_province = JMN }
+  greenland_area = {         change_culture = jan_mayenese change_religion = norse_pagan_reformed add_core = JMN cede_province = JMN }
+  western_norway = {         change_culture = jan_mayenese change_religion = norse_pagan_reformed add_core = JMN cede_province = JMN }
+	23 = {   set_base_tax = 20 set_base_production = 20 set_base_manpower = 20 change_province_name = "°eQSS9h"      rename_capital = "°eQSS9h"     }
+	980 = {  set_base_tax = 30 set_base_production = 30 set_base_manpower = 30 change_province_name = ",r	N°elblšö^"  rename_capital = ",r	N°elblšö^" }
+	2752 = { set_base_tax = 10 set_base_production = 10 set_base_manpower = 10 change_province_name = "Î˜´fÈpR‘†˜"    rename_capital = "Î˜´fÈpR‘†˜"   }
+	24 = {   set_base_tax = 10 set_base_production = 10 set_base_manpower = 10 change_province_name = "÷–—†TîT†˜"    rename_capital = "÷–—†TîT†˜"   }
+	4145 = { set_base_tax = 10 set_base_production = 10 set_base_manpower = 10 change_province_name = "Î‘Ôk'YŠq<hÒR"  rename_capital = "Î‘Ôk'YŠq<hÒR" }
+	370 = {  set_base_tax = 10 set_base_production = 10 set_base_manpower = 10 change_province_name = "°elblšö^"      rename_capital = "°elblšö^"     }
+	371 = {  set_base_tax = 10 set_base_production = 10 set_base_manpower = 10 change_province_name = "s|·V RSyr"    rename_capital = "s|·V RSyr"   }
+	1979 = { set_base_tax = 10 set_base_production = 10 set_base_manpower = 10 change_province_name = "×rŠq²›S"      rename_capital = "×rŠq²›S"     }
+	1978 = { set_base_tax = 10 set_base_production = 10 set_base_manpower = 10 change_province_name = "÷*Ž›S"        rename_capital = "÷*Ž›S"       }
+	1104 = { set_base_tax = 10 set_base_production = 10 set_base_manpower = 10 change_province_name = "<SySwmÆY"    rename_capital = "þ–KNýV"       }
+	1105 = { set_base_tax = 10 set_base_production = 10 set_base_manpower = 10 change_province_name = "kSwmÆY"      rename_capital = "wmÉb"         }
+	2573 = { set_base_tax = 10 set_base_production = 10 set_base_manpower = 10 change_province_name = "×rŠq­S"        rename_capital = "×rŠq­S"       }
+	981 = {  set_base_tax = 10 set_base_production = 10 set_base_manpower = 10 change_province_name = "IQ4Y:V!X"      rename_capital = "IQ4Y:V!X"     }
+}
+
+WG_Cirno_SYN_effect = {
+  set_global_flag = Cirno_Supper_SYN
+  SYN = {
+    override_country_name = Cirno_TagName_Supper_SYN
+		add_country_modifier = { name = Cirno_bossmod_luck duration = -1 }
+		add_country_modifier = { name = Cirno_bossmod_invasion_nation duration = -1 }
+		add_country_modifier = { name = Cirno_SYNmod1 duration = -1 }
+		add_country_modifier = { name = Cirno_SYNmod2 duration = -1 }
+		add_country_modifier = { name = Cirno_SYNmod3 duration = -1 }
+		add_country_modifier = { name = Cirno_SYNmod4 duration = -1 }
+		add_country_modifier = { name = Cirno_SYNmod5 duration = -1 }
+		set_ai_personality = { personality = ai_militarist locked = yes }
+		every_country = { add_opinion = { who = SYN modifier = WG_Cirno_boss } }
+	}
+  guinea_coast_area = { change_culture = american change_religion = shamanism add_core = SYN cede_province = SYN }
+  guinea_region = { discover_country = SYN }
+  niger_region = { discover_country = SYN }
+  sahel_region = { discover_country = SYN }
+	2241 = { set_base_tax = 10 set_base_production = 10 set_base_manpower = 10 change_trade_goods = iron }
+	1118 = { set_base_tax = 10 set_base_production = 10 set_base_manpower = 10 change_trade_goods = iron }
+	1119 = { set_base_tax = 10 set_base_production = 10 set_base_manpower = 10 change_trade_goods = iron change_province_name = "Á”NˆåT."  rename_capital = "Á”NˆåT." }
+	2242 = { set_base_tax = 20 set_base_production = 20 set_base_manpower = 20 change_trade_goods = coal change_province_name = ")RÔkÌ‘šN"  rename_capital = ")RÔkÌ‘šN" }
+}
+
+WG_Cirno_AZT_effect = {
+  set_global_flag = Cirno_Supper_AZT
+  AZT = {
+    override_country_name = Cirno_TagName_Supper_AZT
+		add_country_modifier = { name = Cirno_bossmod_luck duration = -1 }
+		add_country_modifier = { name = Cirno_bossmod_invasion_nation duration = -1 }
+		set_ai_personality = { personality = ai_militarist locked = yes }
+		every_country = { add_opinion = { who = AZT modifier = WG_Cirno_boss } }
+	}
+	852 =  { set_base_tax = 30 set_base_production = 30 set_base_manpower = 30 change_province_name = "yrú‹GY‚„yrpQ"  rename_capital = "yrú‹GY‚„yrpQ" add_province_modifier = { name = Cirno_AZTmod_Quetzalcoatl duration = -1 } }
+}
+
+WG_Cirno_MNG_effect = {
+  set_global_flag = Cirno_Supper_MNG
+  MNG = {
+    override_country_name = Cirno_TagName_Supper_MNG
+		add_country_modifier = { name = Cirno_bossmod_luck duration = -1 }
+		add_country_modifier = { name = Cirno_bossmod_invasion_nation duration = -1 }
+    add_country_modifier = { name = Cirno_MNGmod_inward_perfection duration = -1 }
+    add_country_modifier = { name = Cirno_MNGmod_The_Eight_Banners duration = -1 }
+    add_country_modifier = { name = Cirno_MNGmod_Westernization duration = -1 }
+		set_ai_personality = { personality = ai_militarist locked = yes }
+		every_country = { add_opinion = { who = MNG modifier = WG_Cirno_boss } }
+		every_owned_province = {
+			limit = { culture_group = east_asian }
+			set_base_tax = 30
+			set_base_production = 30
+			set_base_manpower = 30
+			change_culture = zhongyuan
+		}
+		1816 = { set_base_tax = 50 set_base_production = 50 set_base_manpower = 50 change_province_name = "z˜)Y"  rename_capital = "z˜)Y" }
+		1821 = { set_base_tax = 50 set_base_production = 50 set_base_manpower = 50 change_province_name = "”^)Y"  rename_capital = "”^)Y" }
+		667 =  { set_base_tax = 40 set_base_production = 40 set_base_manpower = 40 }
+		684 =  { set_base_tax = 40 set_base_production = 40 set_base_manpower = 40 }
+		685 =  { set_base_tax = 40 set_base_production = 40 set_base_manpower = 40 }
+		1822 = { set_base_tax = 40 set_base_production = 40 set_base_manpower = 40 }
+		669 =  { set_base_tax = 35 set_base_production = 35 set_base_manpower = 35 }
+		683 =  { set_base_tax = 35 set_base_production = 35 set_base_manpower = 35 }
+		671 =  { set_base_tax = 35 set_base_production = 35 set_base_manpower = 35 }
+		679 =  { set_base_tax = 35 set_base_production = 35 set_base_manpower = 35 }
+		680 =  { set_base_tax = 35 set_base_production = 35 set_base_manpower = 35 }
+		1836 = { set_base_tax = 35 set_base_production = 35 set_base_manpower = 35 }
+		688 =  { set_base_tax = 35 set_base_production = 35 set_base_manpower = 35 }
+		691 =  { set_base_tax = 35 set_base_production = 35 set_base_manpower = 35 }
+		693 =  { set_base_tax = 35 set_base_production = 35 set_base_manpower = 35 }
+		700 =  { set_base_tax = 35 set_base_production = 35 set_base_manpower = 35 }
+		699 =  { set_base_tax = 35 set_base_production = 35 set_base_manpower = 35 }
+		662 =  { set_base_tax = 35 set_base_production = 35 set_base_manpower = 35 change_province_name = "ff"  rename_capital = "ff" }
+	}
+}
