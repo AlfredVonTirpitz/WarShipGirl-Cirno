@@ -132,7 +132,7 @@ country_event = {
   option = { 
     name = Cirno_event.99.c
     custom_tooltip = Cirno_event.99c_tooltip
-    hidden_effect = { every_owned_province = { decolonize = yes }  }
+    hidden_effect = { every_owned_province = { decolonize = yes } }
   }
 }
 country_event = {
@@ -191,11 +191,16 @@ country_event = { #Ñý¾«±Ò¶Ò»»
   major = yes
   is_triggered_only = yes
   option = { 
-    name = Cirno_event.101.a
+    name = Cirno_event.101.1
     trigger = {
-      adm_power = 100
-      dip_power = 100
-      mil_power = 100
+      NOT = { adm_power = 100 dip_power = 100 mil_power = 100 }
+    }
+    hidden_effect = { country_event = { id = Cirno_event.100 } }
+  }
+  option = { 
+    name = Cirno_event.101.2
+    trigger = {
+      adm_power = 100 dip_power = 100 mil_power = 100
     }
     adm_power_cost = 100
     dip_power_cost = 100
@@ -204,11 +209,9 @@ country_event = { #Ñý¾«±Ò¶Ò»»
     hidden_effect = { country_event = { id = Cirno_event.100 } }
   }
   option = { 
-    name = Cirno_event.101.b
+    name = Cirno_event.101.3
     trigger = {
-      adm_power = 200
-      dip_power = 200
-      mil_power = 200
+      adm_power = 200 dip_power = 200 mil_power = 200
     }
     adm_power_cost = 200
     dip_power_cost = 200
@@ -217,11 +220,9 @@ country_event = { #Ñý¾«±Ò¶Ò»»
     hidden_effect = { country_event = { id = Cirno_event.100 } }
   }
   option = { 
-    name = Cirno_event.101.c
+    name = Cirno_event.101.4
     trigger = {
-      adm_power = 500
-      dip_power = 500
-      mil_power = 500
+      adm_power = 500 dip_power = 500 mil_power = 500
     }
     adm_power_cost = 500
     dip_power_cost = 500
@@ -230,29 +231,53 @@ country_event = { #Ñý¾«±Ò¶Ò»»
     hidden_effect = { country_event = { id = Cirno_event.100 } }
   }
   option = { 
-    name = Cirno_event.101.d
+    name = Cirno_event.101.5
+    trigger = {
+      adm_power = 999 dip_power = 999 mil_power = 999
+    }
+    adm_power_cost = 999
+    dip_power_cost = 999
+    mil_power_cost = 999
+    change_variable = { which = Fairy_money value = 10 }
+    hidden_effect = { country_event = { id = Cirno_event.100 } }
+  }
+  option = { 
+    name = Cirno_event.101.6
+    trigger = {
+      NOT = { sailors = 10000 }
+    }
+    hidden_effect = { country_event = { id = Cirno_event.100 } }
+  }
+  option = { 
+    name = Cirno_event.101.7
     trigger = { sailors = 10000 }
     add_sailors = -10000
     change_variable = { which = Fairy_money value = 1 }
     hidden_effect = { country_event = { id = Cirno_event.100 } }
   }
   option = { 
-    name = Cirno_event.101.e
+    name = Cirno_event.101.8
     trigger = { sailors = 20000 }
     add_sailors = -20000
     change_variable = { which = Fairy_money value = 2 }
     hidden_effect = { country_event = { id = Cirno_event.100 } }
-  
   }
   option = { 
-    name = Cirno_event.101.f
+    name = Cirno_event.101.9
     trigger = { sailors = 50000 }
     add_sailors = -50000
     change_variable = { which = Fairy_money value = 5 }
     hidden_effect = { country_event = { id = Cirno_event.100 } }
   }
   option = { 
-    name = Cirno_event.101.g
+    name = Cirno_event.101.10
+    trigger = { sailors = 100000 }
+    add_sailors = -100000
+    change_variable = { which = Fairy_money value = 10 }
+    hidden_effect = { country_event = { id = Cirno_event.100 } }
+  }
+  option = { 
+    name = Cirno_event.101.11
     hidden_effect = { country_event = { id = Cirno_event.100 } }
   }
 }

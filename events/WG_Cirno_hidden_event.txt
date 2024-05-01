@@ -54,7 +54,7 @@ country_event = {
   }
   immediate = {
     kill_leader = { type = "Sakuya.Izayoi" }
-    country_event = { id = Cirno_hidden_event.4 days = 1 }
+    country_event = { id = Cirno_hidden_event.4 days = 2 }
 	}
   option = {
     name = Cirno_hidden_event.1.a
@@ -83,12 +83,86 @@ country_event = {
     name = Cirno_hidden_event.1.a
   }
 }
+
+country_event = {
+  id = Cirno_hidden_event.5
+  hidden = yes
+  is_triggered_only = yes
+  trigger = { 
+    NOT = { has_country_modifier = Cirno_GreatProject4_mod }
+    any_country = {  #任一敌方有米哈游
+			war_with = ROOT
+			has_country_flag = Cirno_GreatProject4_tier1
+			NOT = {  
+				has_country_flag = Cirno_GreatProject4_tier2
+				has_country_flag = Cirno_GreatProject4_tier3
+			}
+		}
+  }
+  immediate = {
+  	add_inflation = 5
+    add_country_modifier = { name = Cirno_GreatProject4_mod duration = 1825 }
+	}
+  option = {
+    name = Cirno_hidden_event.1.a
+  }
+}
+country_event = {
+  id = Cirno_hidden_event.6
+  hidden = yes
+  is_triggered_only = yes
+  trigger = { 
+    NOT = { has_country_modifier = Cirno_GreatProject4_mod }
+    any_country = {  #任一敌方有米哈游
+			war_with = ROOT
+			has_country_flag = Cirno_GreatProject4_tier2
+			NOT = {  
+				has_country_flag = Cirno_GreatProject4_tier3
+			}
+		}
+  }
+  immediate = {
+  	add_inflation = 5
+		add_stability = -1
+		add_war_exhaustion = 2
+    add_country_modifier = { name = Cirno_GreatProject4_mod duration = 1825 }
+	}
+  option = {
+    name = Cirno_hidden_event.1.a
+  }
+}
+country_event = {
+  id = Cirno_hidden_event.7
+  hidden = yes
+  is_triggered_only = yes
+  trigger = { 
+    NOT = { has_country_modifier = Cirno_GreatProject4_mod }
+    any_country = {  #任一敌方有米哈游
+			war_with = ROOT
+			has_country_flag = Cirno_GreatProject4_tier3
+		}
+  }
+  immediate = {
+  	add_inflation = 5
+		add_stability = -1
+		add_war_exhaustion = 2
+		add_prestige = -50
+		add_manpower = -10
+		kill_leader = { type = general }
+    add_country_modifier = { name = Cirno_GreatProject4_mod duration = 1825 }
+	}
+  option = {
+    name = Cirno_hidden_event.1.a
+  }
+}
+	
 country_event = {
   id = Cirno_hidden_event.999
   hidden = yes
   is_triggered_only = yes
   trigger = {
-    ai = no 
+    ai = no
+    NOT = { has_country_flag = WarShipGirl_Cirno }
   }
   immediate = {
     set_country_flag = WarShipGirl_Cirno
